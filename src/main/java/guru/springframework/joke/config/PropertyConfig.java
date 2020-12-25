@@ -13,10 +13,10 @@ import org.springframework.core.env.Environment;
 
 @Configuration
 //@PropertySource({"classpath:datasource.properties","classpath:jms.properties"})
-@PropertySources({
+/*@PropertySources({
         @PropertySource("classpath:datasource.properties"),
         @PropertySource("classpath:jms.properties")
-})
+})*/
 public class PropertyConfig {
 
     @Autowired
@@ -59,9 +59,9 @@ public class PropertyConfig {
         return fakeJmsBroker;
     }
 
-    @Bean
+   /* @Bean
     public static PropertyPlaceholderAutoConfiguration properties() {
         PropertyPlaceholderAutoConfiguration propertyPlaceholderAutoConfiguration = new PropertyPlaceholderAutoConfiguration();
         return propertyPlaceholderAutoConfiguration;
-    }
+    }*/
 }
